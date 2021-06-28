@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block tittle %}
+shop
+{% endblock %}
+
+{% block content %}
+<div<>
+    {% for obj in object_list %}
+        {{ obj.name }}
+        <img src="{{ obj.image.url }}">
+        {{ obj.content }}
+        {{ obj.prize }}
+        {% if obj.sales %}
+            {{ obj.new_prizes }}
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block tittle %}
+success
+{% endblock %}
+
+{% block content %}
+<div>
+    {% for obj in success %}
+        {{ obj.name }}
+        <img src="{{ obj.image.url }}">
+        {{ obj.content }}
+    {% endfor %}
+</div>
+{% endblock %}
