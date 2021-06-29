@@ -1,0 +1,42 @@
+body{
+    background-image: url("/static/kwiaciarnia_tlo.png");
+}
+
+.nav{
+    background-color: white;
+    opacity: 80%;
+
+}
+
+.nav-tittle{
+    margin: 0%;
+    text-align: center;
+    font-size: 80px;
+}
+
+.nav-links{
+    background-color: #CBD8F2;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.nav-tittle, .nav-links{
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.link{
+    text-decoration: none;
+    padding: 70px;
+}
+
+.home{
+    font-family: 'Papyrus', fantasy;
+    background-color:white;
+    width: 800px;
+    margin: auto;
+    opacity: 80%;
+}
+.home-tittle{
+    text-align: center;
+}
+

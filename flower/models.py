@@ -31,8 +31,8 @@ class About(models.Model):
 class Success(models.Model):
     name = models.CharField(max_length=30)
     image = models.FileField(upload_to='media_cdn')
-    content = models.TextField()
-    order_number = models.SmallIntegerField()
+    content = models.TextField(blank=True, null=True)
+    order_number = models.SmallIntegerField(blank=True, null=True)
 
     def __str__(self):
         return self.name
