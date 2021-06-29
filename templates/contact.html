@@ -5,8 +5,12 @@ contact
 {% endblock %}
 
 {% block content %}
-{{ contact.content }}
-{{ contact.email }}
-{{ contact.phone }}
-{{ contact.adress }}
+<div class="contact">
+    <address>
+        {{ contact.content }}<br>
+        {{ contact.email }}<br>
+        {{ contact.phone }}<br>
+        {{ contact.adress }}
+    </address>
+</div>
 {% endblock %}

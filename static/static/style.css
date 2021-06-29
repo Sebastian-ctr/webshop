@@ -29,14 +29,34 @@ body{
     padding: 70px;
 }
 
-.home{
+.home, .shop, .contact{
     font-family: 'Papyrus', fantasy;
     background-color:white;
     width: 800px;
     margin: auto;
-    opacity: 80%;
+    opacity: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 .home-tittle{
     text-align: center;
 }
+
+.shop{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.contact{
+   text-align: center; 
+   width: 400px;
+   height: 200px;
+   margin-top: 20px;
+   padding-top: 20px;
+   border-radius: 25px;
+   box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.349);
+}
+
+
 

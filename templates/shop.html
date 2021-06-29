@@ -5,12 +5,14 @@ shop
 {% endblock %}
 
 {% block content %}
-<div<>
+<div class="shop">
     {% for obj in object_list %}
-        {{ obj.name }}
-        <img src="{{ obj.image.url }}">
-        {{ obj.content }}
-        {{ obj.prize }}
+        <h1 class="shop-tittle">{{ obj.name }}</h1><br>
+        <p class="image">
+            <img src="{{ obj.image.url }}" width="250" height="250">
+        </p><br>
+        <p>{{ obj.content }}</p><br>
+        <p>prize: {{ obj.prize }} zl</p><br>
         {% if obj.sales %}
             {{ obj.new_prizes }}
         {% endif %}
