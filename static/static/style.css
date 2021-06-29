@@ -59,4 +59,21 @@ body{
 }
 
 
+.div-gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+
 
