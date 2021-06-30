@@ -5,11 +5,13 @@ success
 {% endblock %}
 
 {% block content %}
-<div>
+<div class="shop">
     {% for obj in success %}
-        {{ obj.name }}
-        <img src="{{ obj.image.url }}">
-        {{ obj.content }}
+        <h1>{{ obj.name }}</h1><br>
+        <p>
+            <img src="{{ obj.image.url }}">
+            {{ obj.content }}
+        </p>
     {% endfor %}
 </div>
 {% endblock %}
